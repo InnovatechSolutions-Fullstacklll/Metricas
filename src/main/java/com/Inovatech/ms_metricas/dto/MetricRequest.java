@@ -8,12 +8,10 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class MetricsResponse {
-
-    private Long id;
+@Builder
+public class MetricRequest {
 
     private Integer logrosCompletados;
 
@@ -26,4 +24,8 @@ public class MetricsResponse {
     private List<String> objetivosPlanteados;
 
     private List<String> logrosRecientes;
+
+    private List<Integer> logrosMensuales;
+
+    private List<Integer> objetivosMensuales;
 }

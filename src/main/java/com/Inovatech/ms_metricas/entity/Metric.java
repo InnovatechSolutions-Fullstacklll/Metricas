@@ -12,7 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Metrics {
+public class Metric {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,4 +31,10 @@ public class Metrics {
 
     @ElementCollection
     private List<String> logrosRecientes;
+
+    @ElementCollection
+    private List<Integer> logrosMensuales;
+
+    @ElementCollection
+    private List<Integer> objetivosMensuales;
 }
